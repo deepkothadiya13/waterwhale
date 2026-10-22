@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Water Whale | Spirulina, Phycocyanin & Algae-Based Animal Feed</title>
-<meta name="description" content="Water Whale cultivates and processes Spirulina algae into food-grade powder, natural blue Phycocyanin extract, and protein-rich animal feed. FSSAI licensed, batch tested." />
+<title>Water Whale | Spirulina, Phycocyanin, Animal Feed & Spirulina Liquid</title>
+<meta name="description" content="Water Whale cultivates and processes Spirulina algae into food-grade powder, natural blue Phycocyanin extract, protein-rich animal feed and Spirulina 10% liquid for agriculture. FSSAI licensed, batch tested." />
 <link rel="icon" type="image/png" href="waterwhalelogo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,6 +162,32 @@
   .grade-chip .g-name{display:block;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:17px;color:var(--pigment);}
   .grade-chip .g-note{display:block;font-size:10px;color:var(--ink-soft);margin-top:4px;line-height:1.3;}
 
+  /* ===== FEATURED PRODUCT: SPIRULINA 10% LIQUID ===== */
+  .feature-product{margin-top:28px;display:grid;grid-template-columns:0.8fr 1.2fr;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(10,44,71,0.06);}
+  .fp-media{position:relative;background:#fff;display:flex;align-items:center;justify-content:center;padding:34px 24px;border-right:1px dashed var(--line);}
+  .fp-media img{width:100%;max-width:340px;height:auto;}
+  .fp-badge{position:absolute;top:22px;left:22px;background:var(--leaf);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;padding:7px 13px;border-radius:999px;}
+  .fp-body{padding:38px 40px;}
+  .fp-body h3{font-size:28px;color:var(--navy-deep);margin-bottom:10px;}
+  .fp-body .desc{color:var(--ink-soft);font-size:15px;line-height:1.75;}
+  .fp-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px;}
+  .fp-box{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:20px 22px;}
+  .fp-box h4{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:8px;}
+  .fp-box .spec-line{font-size:13.5px;padding:9px 0;}
+  .fp-box .fp-note{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-top:10px;}
+  .fp-sub{font-family:'Space Grotesk',sans-serif;font-size:17px;color:var(--navy-deep);margin:28px 0 14px;}
+  .benefit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;}
+  .benefit{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--ink);padding:10px 14px;background:#f1f8f4;border:1px solid #e0eee6;border-radius:12px;}
+  .benefit .b-ico{font-size:18px;line-height:1.3;}
+  .benefit:last-child{grid-column:1 / -1;}
+  .fp-disclaimer{font-size:12px;color:var(--ink-soft);margin-top:14px;line-height:1.6;}
+  @media(max-width:980px){
+    .feature-product{grid-template-columns:1fr;}
+    .fp-media{border-right:none;border-bottom:1px dashed var(--line);padding-top:70px;}
+    .fp-body{padding:30px 24px;}
+    .fp-cols,.benefit-grid{grid-template-columns:1fr;}
+  }
+
   /* ===== APPLICATIONS ===== */
   .app-split{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
   .app-card{background:var(--paper);border-radius:var(--radius);padding:34px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(10,44,71,0.05);}
@@ -292,7 +318,7 @@
 <header>
   <div class="container nav">
     <a href="#top" class="brand">
-      <img src="waterwhalelogo.png" alt="Water Whale — Algae & Spirulina Products" class="brand-logo" />
+      <img src="assets/logo.png" alt="Water Whale — Algae & Spirulina Products" class="brand-logo" />
     </a>
     <nav class="links">
       <a href="#about">About</a>
@@ -354,6 +380,16 @@
         </div>
         <div class="metric">35–40<small>% Protein</small></div>
       </div>
+      <div class="spec-row" style="background:rgba(255,255,255,0.05);">
+        <div style="display:flex;align-items:center;">
+          <div class="swatch" style="background:#2f7fb8;"></div>
+          <div>
+            <div class="name">Spirulina 10% Liquid</div>
+            <div class="tagline">Agricultural suspension · 10% w/v</div>
+          </div>
+        </div>
+        <div class="metric">10%<small>w/v Spirulina</small></div>
+      </div>
     </div>
   </div>
 </section>
@@ -394,8 +430,8 @@
   <div class="container">
     <div class="section-head center">
       <span class="eyebrow">Our Products</span>
-      <h2>Three product lines, one raw material</h2>
-      <p>Every product is derived from the same cultivated Spirulina biomass, processed differently to serve human nutrition, food colouring, and animal feed markets.</p>
+      <h2>Four product lines, one raw material</h2>
+      <p>Every product is derived from the same cultivated Spirulina biomass, processed differently to serve human nutrition, food colouring, animal feed and agriculture markets.</p>
     </div>
 
     <div class="product-grid">
@@ -447,6 +483,46 @@
           <div class="spec-line"><span class="k">Packaging</span><span class="v">25 / 50 kg bags</span></div>
           <div class="spec-line"><span class="k">Application</span><span class="v">Livestock &amp; aquaculture</span></div>
         </div>
+      </div>
+    </div>
+
+    <div class="feature-product" id="spirulina-liquid">
+      <div class="fp-media">
+        <span class="fp-badge">New · Agriculture</span>
+        <img src="WaterWhale_Spirulina_10_liquid.png" alt="Water Whale Spirulina 10% liquid in a blue drum" loading="lazy" />
+      </div>
+      <div class="fp-body">
+        <h3>Spirulina 10% Liquid</h3>
+        <p class="desc">A 10% w/v Spirulina agricultural suspension: Spirulina biomass dispersed in purified water, supplied as a ready-to-use liquid for crop applications.</p>
+
+        <div class="fp-cols">
+          <div class="fp-box">
+            <h4>What does &ldquo;10%&rdquo; mean?</h4>
+            <div class="spec-line"><span class="k">Strength</span><span class="v">10% w/v</span></div>
+            <div class="spec-line"><span class="k">Form</span><span class="v">Liquid suspension</span></div>
+            <div class="spec-line"><span class="k">Application</span><span class="v">Agriculture</span></div>
+            <p class="fp-note">10% w/v means 10 kg of Spirulina in every 100 L of finished product.</p>
+          </div>
+          <div class="fp-box">
+            <h4>Formulation per 100 L</h4>
+            <div class="spec-line"><span class="k">Spirulina biomass</span><span class="v">10 kg</span></div>
+            <div class="spec-line"><span class="k">Purified / RO water</span><span class="v">q.s. to 100 L</span></div>
+            <div class="spec-line"><span class="k">pH (target)</span><span class="v">≈ 6–7</span></div>
+            <p class="fp-note">Optional: compatible wetting / dispersing agent and preservative, depending on formulation requirements.</p>
+          </div>
+        </div>
+
+        <h4 class="fp-sub">Potential benefits</h4>
+        <div class="benefit-grid">
+          <div class="benefit"><span class="b-ico">🌱</span><span>Root development</span></div>
+          <div class="benefit"><span class="b-ico">🌿</span><span>Vegetative growth</span></div>
+          <div class="benefit"><span class="b-ico">🍃</span><span>Improved chlorophyll and photosynthetic activity</span></div>
+          <div class="benefit"><span class="b-ico">💧</span><span>Better tolerance to drought, salinity and heat stress</span></div>
+          <div class="benefit"><span class="b-ico">🧬</span><span>Improved nutrient-use processes</span></div>
+          <div class="benefit"><span class="b-ico">🌾</span><span>Potential improvement in biomass and yield</span></div>
+          <div class="benefit"><span class="b-ico">🛡️</span><span>Activation of plant defence and stress-response mechanisms</span></div>
+        </div>
+        <p class="fp-disclaimer">Benefits are those reported for microalgae and cyanobacteria in agricultural use; results vary with crop, dose and growing conditions.</p>
       </div>
     </div>
   </div>
@@ -721,6 +797,7 @@
               <option>Spirulina Powder</option>
               <option>Phycocyanin</option>
               <option>Animal Feed</option>
+              <option>Spirulina 10% Liquid</option>
               <option>Not sure yet</option>
             </select>
           </div>
@@ -739,7 +816,7 @@
 <footer>
   <div class="container">
     <div class="foot-grid">
-      <a href="#top" class="foot-brand"><img src="waterwhalelogo.png" alt="Water Whale" /></a>
+      <a href="#top" class="foot-brand"><img src="assets/logo.png" alt="Water Whale" /></a>
       <div class="foot-links">
         <a href="#about">About</a>
         <a href="#products">Products</a>
